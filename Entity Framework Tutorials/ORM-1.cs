@@ -30,6 +30,8 @@ while (await reader.ReadAsync())
 {
     //read data
 }
+
+//some changes
 await connection.CloseAsync();
 
 #endregion
