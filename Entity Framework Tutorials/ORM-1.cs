@@ -27,4 +27,14 @@ MyDbContext northwinddbcontext = new MyDbContext();
 
 var data  = northwinddbcontext.ExampleProperty.ToList();
 
+//for example
+
+var query = from c in northwinddbcontext.ExampleProperty
+            where c.ExampleProperty == "Example"
+            select c;
+
+var query2 = northwinddbcontext.ExampleProperty.Where(c => c.ExampleProperty == "Example");
+
+var dataResult = query.ToList();
+
 #endregion
